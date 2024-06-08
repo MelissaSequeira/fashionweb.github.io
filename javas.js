@@ -86,3 +86,63 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+let dress_sec=document.querySelector('.inner-catdivd');
+let innerhtml1='';
+
+let itemdress=[{dim:'cdress1.webp', dprodname:'name1',dprodprice:4000},
+    {dim:'cdress5.jpg', dprodname:'name2',dprodprice:4000},
+    {dim:'dress3.webp', dprodname:'name3',dprodprice:4000},
+    {dim:'dress4.jpeg', dprodname:'name4',dprodprice:4000},
+    {dim:'dress5.png', dprodname:'name5',dprodprice:4000},
+    {dim:'dress6.webp', dprodname:'name6',dprodprice:4000},
+    {dim:'dress7.jpeg', dprodname:'name7',dprodprice:4000},
+    {dim:'dress8.webp', dprodname:'name8',dprodprice:4000}
+];
+
+if(!dress_sec){
+    console.log('sjhfbsjd');
+}else{
+    itemdress.forEach(item1=>{
+        innerhtml1+=`
+        <div class="inner-categary-divd">
+                
+                <div class="inner-categary-divd-img">
+                <img src="${item1.dim}">
+                </div>
+                <div class="dprdinfo">
+                <div class="product-name">${item1.dprodname}</div>
+                <div class="product-price">${item1.dprodprice}</div>
+                <button class="add-to-cart-button">Add TO Cart</button>
+                </div>
+                
+        </div>
+        `;
+    });
+    dress_sec.innerHTML=innerhtml1;
+}
+document.addEventListener('DOMContentLoaded', (event) => {
+    let leftdbut = document.querySelector('#lbut');
+    let rightdbut = document.querySelector('#rbut');
+    let slidecont = document.querySelector('.inner-catdivd');
+    let slidepics = document.querySelectorAll('.inner-categary-divd'); // Selecting all elements with the class
+
+    let slideno1 = 0;
+    let picwidth = 1000;
+
+    rightdbut.addEventListener('click', () => {
+        // Adjust condition for proper range
+        if (slideno1 < slidepics.length - Math.floor(slidecont.clientWidth / picwidth)) { 
+            slideno1++;
+            slidecont.style.transform = `translateX(-${slideno1 * picwidth}px)`;
+        }
+    });
+
+    leftdbut.addEventListener('click', () => {
+        // Add left button functionality
+        if (slideno1 > 0) { 
+            slideno1--;
+            slidecont.style.transform = `translateX(-${slideno1 * picwidth}px)`;
+        }
+    });
+});
