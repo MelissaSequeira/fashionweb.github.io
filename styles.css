@@ -44,16 +44,13 @@ body {
     border-radius: 10px;
 }
 .navdiv{
-    
     margin-left: 20px;
-    
     text-align: center;
     float: left;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .toggle-btn {
     color: #fff;
     font-size: 1.5rem;
@@ -70,9 +67,6 @@ body {
     flex-direction: column;
     width:300px;
     right: 2rem;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     display: none;
     top:30px;
     border-radius: 10px;
@@ -308,34 +302,14 @@ body {
     }
 }
 /* page2 ends */
-#categary-dress{
+#categary-dress, #categary-access,#categary-cosmet,#categary-jewel,#categary-foot,#categary-jack{
     width: 1000px;
-    height: 1000px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-inline: auto;
     overflow: hidden;
-}
-#categary-access{
-    width: 100%;
-    height: 700px;
-}
-#categary-cosmet{
-    width: 100%;
-    height: 700px;
-}
-#categary-jewel{
-    width: 100%;
-    height: 700px;
-}
-#categary-foot{
-    width: 100%;
-    height: 700px;
-}
-#categary-jack{
-    width: 100%;
-    height: 700px;
 }
 .categary-title{
     height: 80px;
@@ -347,9 +321,9 @@ body {
     font-size: 65px;
     letter-spacing: 6px;
 }
-.inner-catdivd{
-    width: 1000px;
-    height: 1000px;
+.inner-catdivd,.inner-catdiva,.inner-catdivc,.inner-catdivj,.inner-catdivf,.inner-catdivs{
+    width: 890px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -360,7 +334,7 @@ body {
     transition: transform 0.5s ease-in-out;
     align-items: center;
 }
-#lbut, #rbut{
+#lbut, #rbut,#lbut1, #rbut1,#lbut2, #rbut2,#lbut3, #rbut3,#lbut4, #rbut4,#lbut5, #rbut5{
     height: 40px;
     width:40px;
     margin: 20px;
@@ -379,33 +353,31 @@ body {
     align-items: center;
     transition: transform 0.5s ease-in-out; /* Add transition for smooth sliding */
 }
-.inner-categary-divd{
-    height: 800px;
-    width: 500px;
+.inner-categary-divd ,.inner-categary-diva,.inner-categary-divc,.inner-categary-divj,.inner-categary-divf,.inner-categary-divs{
+    height: 499px;
+    width: 300px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    transition: transform 0.5s ease-in-out; /* Add transition for smooth sliding */
+    transition: transform 0.5s ease-in-out /* Add transition for smooth sliding */;/* Add transition for smooth sliding */
 }
-.inner-categary-divd-img img{
-    
-    height:500px;
-    width:400px;
+.inner-categary-divd-img img ,.inner-categary-diva-img img,.inner-categary-divc-img img,.inner-categary-divj-img img,.inner-categary-divf-img img,.inner-categary-divs-img img{
+    height: 300px;
+    width: 200px;
     background-size: cover;
     object-fit: fill;
     background-position: center;
 }
-.inner-categary-divd-img{
-    height:500px;
-    width:400px;
+.inner-categary-divd-img, .inner-categary-diva-img, .inner-categary-divc-img, .inner-categary-divj-img, .inner-categary-divf-img, .inner-categary-divs-img{
+    height: 300px;
+    width: 200px;
     background-size: cover;
     object-fit: fill;
     background-position: center;
-
 }
-.dprdinfo{
+.dprdinfo,.aprdinfo,.cprdinfo,.jprdinfo,.fprdinfo,.sprdinfo{
     height: 200px;
     width: 70%;
     display: flex;
@@ -420,231 +392,6 @@ body {
     letter-spacing: 6px;
 }
 
-.inner-categary-div2{
-    height: 500px;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.inner-categary-div3{
-    height: 500px;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
-.inner-categary-div3-img{
-    margin-left: 70px;
-    height:350px;
-    width:400px;
-    background-image: url('caccess1.webp');
-    background-size: cover;
-    object-fit: fill;
-    background-position: center;
-
-}
-.inner-categary-div4{
-    height: 500px;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-.inner-categary-div4-img{
-    margin-left: 70px;
-    height:350px;
-    width:400px;
-    background-image: url('caccess2.jpg');
-    background-size: cover;
-    object-fit: fill;
-    background-position: center;
-
-}
-
-
-.inner-categary-div5{
-    height: 500px;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
-.inner-categary-div5-img{
-    margin-left: 70px;
-    height:350px;
-    width:400px;
-    background-image: url('ccos1.jpg');
-    background-size: cover;
-    object-fit: fill;
-    background-position: center;
-
-}
-.inner-categary-div6{
-    height: 500px;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-.inner-categary-div6-img{
-    margin-left: 70px;
-    height:350px;
-    width:400px;
-    background-image: url('ccos3.webp');
-    background-size: cover;
-    object-fit: fill;
-    background-position: center;
-
-}
-
-.inner-categary-div7{
-    height: 500px;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
-.inner-categary-div7-img{
-    margin-left: 70px;
-    height:350px;
-    width:400px;
-    background-image: url('cjew1.jpg');
-    background-size: cover;
-    object-fit: fill;
-    background-position: center;
-
-}
-.inner-categary-div8{
-    height: 500px;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-.inner-categary-div8-img{
-    margin-left: 70px;
-    height:350px;
-    width:400px;
-    background-image: url('cjew2.webp');
-    background-size: cover;
-    object-fit: fill;
-    background-position: center;
-
-}
-
-.inner-categary-div9{
-    height: 500px;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
-.inner-categary-div9-img{
-    margin-left: 70px;
-    height:350px;
-    width:400px;
-    background-image: url('cfoot1.jpg');
-    background-size: cover;
-    object-fit: fill;
-    background-position: center;
-
-}
-.inner-categary-div10{
-    height: 500px;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-.inner-categary-div10-img{
-    margin-left: 70px;
-    height:350px;
-    width:400px;
-    background-image: url('cfoot2.webp');
-    background-size: cover;
-    object-fit: fill;
-    background-position: center;
-
-}
-
-.inner-categary-div11{
-    height: 500px;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
-.inner-categary-div11-img{
-    margin-left: 70px;
-    height:350px;
-    width:400px;
-    background-image: url('cjack11.jpg');
-    background-size: cover;
-    object-fit: fill;
-    background-position: center;
-
-}
-.inner-categary-div12{
-    height: 500px;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-.inner-categary-div12-img{
-    margin-left: 70px;
-    height:350px;
-    width:400px;
-    background-image: url('cjack12.webp');
-    background-size: cover;
-    object-fit: fill;
-    background-position: center;
-
-}
 .add-to-cart-button{
   height:35px;
   width: auto;
