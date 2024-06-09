@@ -97,13 +97,12 @@ body {
     }
     #homesec{
         width: auto;
-        height: auto;
-        background:linear-gradient(rgba(117, 88, 13, 0.6),rgba(117, 88, 13, 0.6)),url('lastbg.webp');
+        height: 1900px;
+        background: linear-gradient(rgba(117, 88, 13, 0.6), rgba(117, 88, 13, 0.6)), url(lastbg.webp);
         background-size: cover;
-    
     }
     .navbar{
-        height: 40px;
+        height: 100px;
     }
     .navtext, .navdiv {
         display: none;
@@ -126,7 +125,19 @@ body {
     }
     
 }
-
+.fa-solid, .fas {
+    font-weight: 900;
+    font-size: 70px;
+}
+.mnmn{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 1900px;
+}
 .title{
     height: 720px;
     width:auto;
@@ -148,17 +159,18 @@ body {
 
 @media (max-width: 700px)  {
     .title{  
-    font-size: 65px;
-    padding-top: 370px;
-    text-align: center;
-    letter-spacing: 2px;
+        font-size: 240px;
+        /* padding-top: 370px; */
+        text-align: center;
+        letter-spacing: 2px;
     }
     .subtitle{
-        width:auto;
-        color:black ;
-        font-family:'Courier New', Courier, monospace;
-        font-size: 20px;
+        width: auto;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        /* font-size: 20px; */
         text-align: center;
+        font-size: 60px;
     }
 }
 /* page1 ends */
@@ -275,16 +287,21 @@ body {
 @media (max-width:700px) {
     #discover {
         width: auto;
-        height: 880px;
+        height: 1899px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
     .divdresses,.divaccess,.divcosmt,.divjewels,.divfoots,.divjacks{
-        font-size: 18px;
-    justify-content: center;
-    align-items: center;
-    height: 220px;
-    width:170px;
-    margin-top: 10px;
-    margin-left: 10px;
+        font-size: 30px;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        width: 300px;
+        margin-top: 50px;
+        margin-left: 30px;
     }
     .discover-text{
         display: flex;
