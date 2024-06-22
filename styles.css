@@ -3,11 +3,22 @@
 }
 html {
     scroll-behavior: smooth;
+    box-sizing: border-box;
+    width: fit-content;
 }
 
 body {
     background-color: rgba(204, 160, 86, 0.536);
     display: table-footer-group;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 #homesec{
     background:linear-gradient(rgba(117, 88, 13, 0.6),rgba(117, 88, 13, 0.6)),url('lastbg.webp');

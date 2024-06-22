@@ -113,7 +113,7 @@ if(!dress_sec){
                 <div class="dprdinfo">
                 <div class="product-name">${item1.dprodname}</div>
                 <div class="product-price">${item1.dprodprice}</div>
-                <button class="add-to-cart-button">Add TO Cart</button>
+                <button class="add-to-cart-button" onclick="addToCart(event)">Add TO Cart</button>
                 </div>
                 
         </div>
@@ -173,7 +173,7 @@ if(!access_sec){
                 <div class="aprdinfo">
                 <div class="product-name">${item2.aprodname}</div>
                 <div class="product-price">${item2.aprodprice}</div>
-                <button class="add-to-cart-button">Add TO Cart</button>
+                <button class="add-to-cart-button" onclick="addToCart(event)">Add TO Cart</button>
                 </div>
                 
         </div>
@@ -231,7 +231,7 @@ if(!cosmet_sec){
                 <div class="cprdinfo">
                 <div class="product-name">${item3.cprodname}</div>
                 <div class="product-price">${item3.cprodprice}</div>
-                <button class="add-to-cart-button">Add TO Cart</button>
+                <button class="add-to-cart-button" onclick="addToCart(event)">Add TO Cart</button>
                 </div>
         </div>
         `;
@@ -288,7 +288,7 @@ if(!jewel_sec){
                 <div class="jprdinfo">
                 <div class="product-name">${item4.jprodname}</div>
                 <div class="product-price">${item4.jprodprice}</div>
-                <button class="add-to-cart-button">Add TO Cart</button>
+                <button class="add-to-cart-button" onclick="addToCart(event)">Add TO Cart</button>
                 </div>
         </div>
         `;
@@ -343,7 +343,7 @@ if(!foot_sec){
                 <div class="fprdinfo">
                 <div class="product-name">${item5.fprodname}</div>
                 <div class="product-price">${item5.fprodprice}</div>
-                <button class="add-to-cart-button">Add TO Cart</button>
+               <button class="add-to-cart-button" onclick="addToCart(event)">Add TO Cart</button>
                 </div>
         </div>
         `;
@@ -402,7 +402,7 @@ if(!jack_sec){
                 <div class="sprdinfo">
                 <div class="product-name">${item6.sprodname}</div>
                 <div class="product-price">${item6.sprodprice}</div>
-                <button class="add-to-cart-button">Add TO Cart</button>
+                <button class="add-to-cart-button" onclick="addToCart(event)">Add TO Cart</button>
                 </div>
                 
         </div>
